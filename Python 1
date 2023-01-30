@@ -1,0 +1,30 @@
+CELL 1 
+
+def leap_year(year):
+  if(year % 4 == 0 and year % 100 != 0 or year % 400==0 ):
+     print("The given year is a leap year")
+  
+  else:
+     print("The given year is not a leap year")
+year = int(input("Enter year to be checked :"))
+leap_year(year)
+
+CELL 2
+
+def unit_converter(option):
+  
+  height = int(input("Enter height in centimeters : "))
+  if(option == "1"):
+    inches = (height*x)
+    print("The length in inches",inches)
+  else:
+   feet = (height*y)
+   print("The length in feet:" , feet)    
+   
+x = 0.394
+y = 0.0328
+print("Choose from below")
+print("1.inch")
+print("2.feet")
+option = input("Choose the unit you want to convert(1/2):")
+unit_converter(option)
